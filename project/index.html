@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!---loading font awesome library link-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Index</title>
+
+<body>
+    <section>
+        <!---header part-->
+        <header class="header-section">
+            <div>
+                <h1><span><i class="fa fa-shopping-basket" aria-hidden="true"></i></span>Achivers<span>IT</span></h1>
+            </div>
+            <div>
+                <ul class="items">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#Products">Products</a>
+                    </li>
+                    <li>
+                        <a href="#Features">Features</a>
+                    </li>
+                    <li>
+                        <a href="#Categories">Categories</a>
+                    </li>
+                    <li>
+                        <a href="#Review">Review</a>
+                    </li>
+                    <li>
+                        <a href="#Blogs">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="icons">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i id="clicked" class="fa fa-user" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="gridone animate__animated animate__backInRight" id="grid">
+
+                <div class="form " id="formone">
+                    <i class="fa fa-times-circle" aria-hidden="true" id="close"></i>
+
+                    <h2>Login Form</h2>
+
+                    <form method="GET" action="#" novalidate>
+
+                        <div class="email" id="email">
+                            <input type="email" placeholder="email" class="form-control" id="InputEmail"><br>
+                            <span id="eErr">Enter Correct Email</span>
+                        </div></br>
+
+                        <div class="password" id="pwd">
+                            <input type="password" placeholder="Password" class="form-control" id="InputPassword"><br>
+                            <span id="pErr">Enter Correct Password</span>
+                        </div><br>
+
+                        <div>
+                            <p>Don't have an account?
+                                <a href="#" class="text-primary fw-bold" id="signup">SignUp</a>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>Forgot Password:
+                                <a href="#" class="text-primary" id="password">Forgot password?</a>
+                            </p>
+                        </div>
+
+                        <div>
+                            <button class="login" type="submit" id="login">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="reg" id="sign">
+                <i class="fa fa-times-circle" aria-hidden="true" id="exit"></i>
+                <h1>Registration Form</h1>
+                <form>
+                    <div>
+                        <label> Firstname: </label>
+                        <input type="text" name="firstname" size="15">
+                    </div> <br>
+
+                    <div>
+                        <label> Middlename: </label>
+                        <input type="text" name="middlename" size="15">
+                    </div> <br>
+
+                    <div>
+                        <label> Lastname: </label>
+                        <input type="text" name="lastname" size="15">
+                    </div> <br>
+
+                    <div>
+                        <label> Password: </label>
+                        <input type="text" name="Password" size="15">
+                    </div> <br>
+
+                    <div>
+                        <label> Conform Password: </label>
+                        <input type="text" name=" Conform Password" size="15">
+                    </div> <br>
+
+                    <div>
+                        <label> Email: </label>
+                        <input type="text" name="Email" size="20">
+                    </div> <br>
+
+                    <div>
+                        <lable> Gender: </lable>
+                        <input type="radio" id="Male" name="fav_language" value="Male">
+                        <label for="age1">Male</label>
+                        <input type="radio" id="Female" name="fav_language" value="Female">
+                        <label for="age2">Female</label>
+                    </div> <br>
+
+                    <div>
+                        <button class="login" type="submit" id="login">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="ForgetPass" id="pass">
+                <i class="fa fa-times-circle" aria-hidden="true" id="closed"></i>
+                <h2>Forgot Password</h2>
+
+                <form method="GET" action="#" novalidate>
+
+                    <div>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" name="email" required>
+                    </div><br>
+
+                    <div>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" name="psw" required>
+                    </div><br>
+
+                    <div>
+                        <label for="re-psw"><b>Re-Enter Password</b></label>
+                        <input type="password" name="re-psw" required>
+                    </div><br>
+
+                    <div>
+                        <button class="butt">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </header>
+
+        <div class="banner" style="margin-top: 85px;">
+            <div>
+                <img src="D:\html\img\banner-bg.webp" alt="banner" style="height: 350px; width: 100%;">
+                <div class="banner-text">
+                    <h1>Fresh And Organic Products For Your</h1>
+                    <p>Lorem Ipsum Amet Consectetur Adipisicing Elit Aliquam</p>
+                    <p>Libero Nostrum Veniam Facere Tempare Nisi.</p>
+                    <button id="click" onclick="">Shop Now </button>
+                </div>
+            </div>
+        </div>
+        <!--banner part ends-->
+        <!---features part-->
+        <section class="features" id="Features">
+            <div>
+                <h1>Our <span>Features</span></h1>
+            </div>
+        </section>
+        <section class="our-features">
+            <div>
+                <img src="D:\html\img\feature-img-1.png" alt="img">
+                <h1 class="fresh">Fresh and Organic</h1>
+                <p>Learn,Lpsum Dolor Sit Amet Consectetur</p>
+                <p>Adipising Elit,Deserunt,Earuma</p>
+                <button>
+                    <a href="../project/organic.html">
+                        Read More
+                    </a>
+                </button>
+            </div>
+            <div>
+                <img src="D:\html\img\feature-img-2.png" alt="img">
+                <h1 id="head">Services</h1>
+                <p>Learn,Lpsum Dolor Sit Amet Consectetur</p>
+                <p>Adipising Elit,Deserunt,Earuma</p>
+                <button><a href="./serices.html">
+                    Read More
+                </a></button>
+            </div>
+            <div>
+                <img src="D:\html\img\feature-img-3.png" alt="img">
+                <h1>Payments</h1>
+                <p>Learn,Lpsum Dolor Sit Amet Consectetur</p>
+                <p>Adipising Elit,Deserunt,Earuma</p>
+                <button>
+                    <a href="./payments.html">
+                        Read More
+                    </a>
+                </button>
+            </div>
+        </section>
+        <!---features part-->
+        <!---products part--->
+        <section class="features" id="Products">
+            <div>
+                <h1>Our <span>Products</span></h1>
+            </div>
+        </section>
+        <section class="our-products">
+            <div>
+                <img src="D:\html\img\product-1.png" alt="img">
+                <h1>Fresh Orange</h1>
+                <p>₹4.99/- -₹10.99/-</p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <p>
+                    <button>Add to Cart</button>
+                </p>
+            </div>
+            <div>
+                <img src="D:\html\img\product-4.png" alt="img">
+                <h1>Fresh Cabbage</h1>
+                <p>₹4.99/- -₹10.99/-</p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <p>
+                    <button>Add to Cart</button>
+                </p>
+            </div>
+            <div>
+                <img src="D:\html\img\product-2.png" alt="img">
+                <h1>Fresh Onion</h1>
+                <p>₹4.99/- -₹10.99/-</p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <p>
+                    <button>Add to Cart</button>
+                </p>
+            </div>
+            <div>
+                <img src="D:\html\img\product-8.png" alt="img">
+                <h1>Green Lemon</h1>
+                <p>₹4.99/- -₹10.99/-</p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <p>
+                    <button>Add to Cart</button>
+                </p>
+            </div>
+            <div>
+                <img src="D:\html\img\product-5.png" alt="img">
+                <h1>Fresh Potato</h1>
+                <p>₹4.99/- -₹10.99/-</p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <p>
+                    <button>Add to Cart</button>
+                </p>
+            </div>
+            <div>
+                <img src="D:\html\img\product-6.png" alt="img">
+                <h1>Fresh Avacado</h1>
+                <p>₹4.99/- -₹10.99/-</p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <p>
+                    <button>Add to Cart</button>
+                </p>
+            </div>
+        </section>
+        <!---products part ends--->
+        <!---categories part-->
+        <section class="features" id="Categories">
+            <div>
+                <h1>Product <span>Categories</span></h1>
+            </div>
+        </section>
+        <section class="our-categories">
+            <div>
+                <img src="D:\html\img\cat-1.png" alt="img">
+                <h1>Vegitabels</h1>
+                <p>Upto 45% Off</p>
+                <button>
+                    <a href="./collection.html">
+                        Show more
+                    </a>
+                </button>
+            </div>
+            <div>
+                <img src="D:\html\img\cat-2.png" alt="img">
+                <h1>Fresh Fruits</h1>
+                <p>Upto 45% Off</p>
+                <button>
+                    <a href="./collection.html">
+                        Show more
+                    </a>
+                </button>
+            </div>
+            <div>
+                <img src="D:\html\img\cat-3.png" alt="img">
+                <h1>Daily Products</h1>
+                <p>Upto 45% Off</p>
+                <button>
+                    <a href="./collection.html">
+                        Show more
+                    </a>
+                </button>
+            </div>
+            <div>
+                <img src="D:\html\img\cat-4.png" alt="img">
+                <h1>Flesh Meat</h1>
+                <p>Upto 45% Off</p>
+                <button>
+                    <a href="./collection.html">
+                        Show more
+                    </a>
+                </button>
+            </div>
+        </section>
+        <!---categories part ends-->
+        <!---review part--->
+        <section class="features" id="Review">
+            <div>
+                <h1>Customers <span>Review</span></h1>
+            </div>
+        </section>
+        <section class="customer-review">
+            <div>
+                <img src="D:\html\img\pic-1.png" alt="pic">
+                <p>Lorem, ipsum dolor sit amet Consectetur
+                    adispiscing elit unde sunt fugiat dolore ipsum id est maximum ad
+                    temper quasi tentur.</p>
+                <h1>Naveen</h1>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+            <div>
+                <img src="D:\html\img\pic-2.png" alt="pic">
+                <p>Lorem, ipsum dolor sit amet Consectetur
+                    adispiscing elit unde sunt fugiat
+                    dolore ipsum id est maximum ad
+                    temper quasi tentur.</p>
+                <h1>Lavanya</h1>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+            <div>
+                <img src="D:\html\img\pic-4.png" alt="pic">
+                <p>Lorem, ipsum dolor sit amet Consectetur
+                    adispiscing elit unde sunt fugiat
+                    dolore ipsum id est maximum ad
+                    temper quasi tentur.</p>
+                <h1>Lavanya</h1>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+
+        </section>
+        <!---review part ends--->
+        <!---bolgs part--->
+        <section class="features" id="Blogs">
+            <div>
+                <h1>Our <span>Blogs</span></h1>
+            </div>
+        </section>
+        <section class="our-blogs">
+
+            <div>
+                <img src="D:\html\img\blog-1.jpg" alt="blog">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                By User
+                <i class="fa fa-calendar-minus-o" aria-hidden="true" style="margin-left: 127px;"></i>
+                1st May 2001
+                <hr>
+                <h1>Fresh and Organic Vegetables and Fruits</h1>
+                <p>Lorem, ipsum dolor sit amet Consectetur
+                    adispiscing elit. Veniam,Expedita.</p>
+                <button>Read More</button>
+            </div>
+
+            <div>
+                <img src="D:\html\img\blog-2.jpg" alt="blog">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                By User
+                <i class="fa fa-calendar-minus-o" aria-hidden="true" style="margin-left: 150px;"></i>
+                1st May 2001
+                <hr>
+                <h1>Fresh and Organic Vegetables and Fruits</h1>
+                <p>Lorem, ipsum dolor sit amet Consectetur
+                    adispiscing elit. Veniam,Expedita.</p>
+                <button>Read More</button>
+            </div>
+
+            <div>
+                <img src="D:\html\img\blog-3.jpg" alt="blog">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                By User
+                <i class="fa fa-calendar-minus-o" aria-hidden="true" style="margin-left: 150px;"></i>
+                1st May 2001
+                <hr>
+                <h1>Fresh and Organic Vegetables and Fruits</h1>
+                <p>Lorem, ipsum dolor sit amet Consectetur
+                    adispiscing elit. Veniam,Expedita.</p>
+                <button>Read More</button>
+            </div>
+        </section>
+        <!---bolgs part ends--->
+        <!---footer part--->
+        <footer>
+            <section class="achivers">
+                <h2>Achivers<span>IT</span><span><i class="fa fa-shopping-basket" aria-hidden="true"></i></span></h2>
+                <p>learn ipsum dolor sit, amet Consectetur</p>
+                <p>adipisicing elit aliquam,saepe.</p>
+                <div class="icon">
+                    <ul>
+                        <li>
+
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true" style="color: black;"></i></a>
+
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true" style="color: black;"></i>
+                            </a>
+                        </li>
+
+                        <li>
+
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true" style="color: black;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-youtube" aria-hidden="true" style="color: black;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contacts">
+                <h2>Contact Info</h2>
+                <ul>
+                    <li>
+                        <i class="fa fa-phone" aria-hidden="true"></i><span>+91 6304293563</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone" aria-hidden="true"></i><span>+91 7997418409</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope" aria-hidden="true"></i><span>naveen.g6304@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i><span>Marathalli</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>
+                        <a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Home</a>
+                    </li>
+                    <li>
+                        <a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Features</a>
+                    </li>
+                    <li>
+                        <a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Products</a>
+                    </li>
+                    <li>
+                        <a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Cateories</a>
+                    </li>
+                    <li>
+                        <a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Review</a>
+                    </li>
+                    <li>
+                        <a href="#"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Blogs</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="letter">
+                <h2>Newsletter</h2>
+                <p>Subscribe For Latest Updates</p>
+                <textarea>Your Mail</textarea>
+                <p>
+                    <button onclick="">Submit</button>
+                </p>
+
+                <div>
+                    <img src=D:\html\img\payment.png>
+                </div>
+                </div>
+            </section>
+        </footer>
+        <!---footer part ends--->
+        <section class="bottom">
+            <hr>
+            <h3>created By <span>Mr.G.NAVEEN B.Com(C.A)</span>|All Right Reserved</h3>
+        </section>
+    </section>
+
+    <script>
+        document.getElementById('clicked').addEventListener('click', displayForm);
+        function displayForm() {
+            var x = document.getElementById('grid')
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        };
+
+        document.getElementById('close').addEventListener('click', displayForm);
+        function displayForm() {
+            var x = document.getElementById('grid')
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        };
+
+        document.getElementById('signup').addEventListener('click', displaysign);
+        function displaysign() {
+            var x = document.getElementById('sign')
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        };
+        document.getElementById('exit').addEventListener('click', displaysign);
+        function displayForm() {
+            var x = document.getElementById('grid')
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        };
+
+        document.getElementById('password').addEventListener('click', displaypass);
+        function displaypass() {
+            var x = document.getElementById('pass')
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        };
+
+        document.getElementById('closed').addEventListener('click', displaypass);
+        function displaypass() {
+            var x = document.getElementById('pass')
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        };
+
+
+        document.getElementById('formone').addEventListener('click', function () {
+            let email, pwd;
+
+            email = document.getElementById('InputEmail').value;
+            pwd = document.getElementById('InputPassword').value;
+
+            if (email == "") {
+                document.getElementById('eErr').style.display = 'block';
+            } else {
+                document.getElementById('eErr').style.display = 'none';
+            }
+
+            if (pwd == "") {
+                document.getElementById('pErr').style.display = 'block';
+            } else {
+                document.getElementById('pErr').style.display = 'none';
+            }
+
+        });
+    </script>
+</body>
+</head>
+
+</html>
